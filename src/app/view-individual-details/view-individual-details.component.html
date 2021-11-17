@@ -1,0 +1,27 @@
+<div class="flex-container-column empty"></div>
+<div class="flex-container-column container center" style="background-color: white">
+    <h4 class="center">View Details</h4>
+
+    <div *ngFor="let emp of employee">
+        <div class="flex-container-row">
+            <h5>First Name : &nbsp; {{ emp.first_name }}</h5>
+            <h5>Last Name : &nbsp; {{ emp.last_name }}</h5>
+        </div>
+
+        <div class="flex-container-row">
+            <h5>Email ID : &nbsp; {{ emp.email }}</h5>
+        </div>
+
+        <div class="flex-container-row">
+            <h5>Phone : &nbsp; {{ emp.phone }}</h5>
+            <h5>Designation : &nbsp; {{ emp.designation }}</h5>
+
+        </div>
+
+        <h5>Salary : &nbsp; {{ emp.salary }}</h5>
+
+        <div class="flex-container-row">
+            <h5>Organization : &nbsp; {{ emp.organization }}</h5>
+        </div>
+    </div>
+</div>

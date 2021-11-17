@@ -1,0 +1,134 @@
+<div class="flex-container-column empty"></div>
+<div class="flex-container-column container center" style="background-color: white">
+  <h4 class="center">Registration Form</h4>
+  <form [formGroup]="form" (submit)="onSubmit()">
+    <div class="flex-container-row">
+      <div class="form-group flex-container-column input-width">
+        <label> First Name</label>
+        <input type="text" id="first_name" formControlName="first_name" name="first_name" />
+        <div *ngIf="
+            form.controls['first_name'].invalid &&
+            form.controls['first_name'].touched
+          " class="error">
+          <div *ngIf="form.controls['first_name'].errors?.required">
+            Please enter First Name!
+          </div>
+          <div *ngIf="form.controls['first_name'].errors?.minlength">
+            First Name should have atleast 3 characters!
+          </div>
+          <div *ngIf="form.controls['first_name'].errors?.pattern">
+            First Name should have only letters!
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group flex-container-column input-width">
+        <label> Last Name</label>
+        <input type="text" id="last_name" name="last_name" formControlName="last_name" />
+        <div *ngIf="
+            form.controls['last_name'].invalid &&
+            form.controls['last_name'].touched
+          " class="error">
+          <div *ngIf="form.controls['last_name'].errors?.required">
+            Please enter Last Name!
+          </div>
+          <div *ngIf="form.controls['last_name'].errors?.minlength">
+            Last Name should have atleast 3 characters!
+          </div>
+          <div *ngIf="form.controls['last_name'].errors?.pattern">
+            Last Name should have only letters!
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex-container-row">
+      <div class="form-group flex-container-column input-width">
+        <label> Email Id</label>
+        <input type="text" id="email" name="email" formControlName="email" />
+        <div *ngIf="
+            form.controls['email'].invalid && form.controls['email'].touched
+          " class="error">
+          <div *ngIf="form.controls['email'].errors?.required">
+            Please enter Email Id!
+          </div>
+          <div *ngIf="form.controls['email'].errors?.email">
+            Email Id should be of the form "abc@xyz.com"!
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group flex-container-column input-width">
+        <label> Phone Number</label>
+        <input type="text" id="phone" name="phone" formControlName="phone" />
+        <div *ngIf="
+            form.controls['phone'].invalid && form.controls['phone'].touched
+          " class="error">
+          <div *ngIf="form.controls['phone'].errors?.required">
+            Please enter Phone Number!
+          </div>
+          <div *ngIf="form.controls['phone'].errors?.pattern">
+            Phone Number should contain only numbers!
+          </div>
+          <div *ngIf="form.controls['phone'].errors?.maxlength">
+            Phone Number should have only 10 characters!
+          </div>
+          <div *ngIf="form.controls['phone'].errors?.minlength">
+            Phone Number should have 10 characters!
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group flex-container-column input-width-org">
+      <label> Organization</label>
+      <input type="text" id="organization" name="organization" formControlName="organization" />
+      <div *ngIf="
+          form.controls['organization'].invalid &&
+          form.controls['organization'].touched
+        " class="error">
+        <div *ngIf="form.controls['organization'].errors?.required">
+          Please enter Organization!
+        </div>
+      </div>
+    </div>
+
+    <div class="flex-container-row">
+      <div class="form-group flex-container-column input-width">
+        <label> Designation</label>
+        <input type="text" id="designation" name="designation" formControlName="designation" />
+        <div *ngIf="
+            form.controls['designation'].invalid &&
+            form.controls['designation'].touched
+          " class="error">
+          <div *ngIf="form.controls['designation'].errors?.required">
+            Please enter Designation!
+          </div>
+          <div *ngIf="form.controls['designation'].errors?.pattern">
+            Designation should contain only letters!
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group flex-container-column input-width">
+        <label> Salary</label>
+        <input type="text" id="salary" name="salary" formControlName="salary" />
+        <div *ngIf="
+            form.controls['salary'].invalid && form.controls['salary'].touched
+          " class="error">
+          <div *ngIf="form.controls['salary'].errors?.required">
+            Please enter Salary!
+          </div>
+          <div *ngIf="form.controls['salary'].errors?.pattern">
+            Salary should contain only numbers!
+          </div>
+          <div *ngIf="form.controls['salary'].errors?.minlength">
+            Salary should have atleast 4 characters!
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button class="btn btn-success center" type="submit">Submit</button>
+  </form>
+</div>

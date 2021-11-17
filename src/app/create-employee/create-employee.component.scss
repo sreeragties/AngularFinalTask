@@ -1,0 +1,59 @@
+.container {
+  width: 40%;
+  height: 40%;
+  opacity: 0.95;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+
+  overflow: hidden;
+}
+
+.center {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.empty {
+  height: 50px;
+}
+
+.flex-container-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-container-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.input-width {
+  width: 40%;
+  margin: 20px 20px 20px 20px;
+}
+
+.input-width-org {
+  width: 90%;
+  margin: 20px 20px 20px 20px;
+}
+
+button {
+  margin: 10px 10px 20px 10px;
+}
+
+h4 {
+  margin: 20px 10px 20px 10px;
+}
+
+// input.ng-invalid {
+//   border-left: 5px solid red;
+// }
+
+// input.ng-valid {
+//   border-left: 5px solid green;
+// }
+
+.error {
+  color: red;
+}

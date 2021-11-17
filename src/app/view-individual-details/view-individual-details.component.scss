@@ -1,0 +1,75 @@
+.green {
+  background-color: green;
+}
+.red {
+  background-color: red;
+}
+.container {
+  width: 40%;
+  height: 40%;
+  opacity: 0.95;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+
+  overflow: hidden;
+}
+
+.center {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.empty {
+  height: 50px;
+}
+
+.flex-container-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-container-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.input-width {
+  width: 40%;
+  margin: 20px 20px 20px 20px;
+}
+
+.input-width-org {
+  width: 90%;
+  margin: 20px 20px 20px 20px;
+}
+
+button {
+  margin: 10px 10px 20px 10px;
+}
+
+h4 {
+  margin: 20px 10px 20px 10px;
+}
+
+button {
+  /* Green */
+  border: none;
+  color: white;
+  margin: 0px 30px 10px 30px;
+
+  width: 60%;
+  padding: 7.5px 22px 7.5px 20px;
+  position: relative;
+  text-align: center;
+
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+h5 {
+  margin: 10px 30px 30px 30px;
+  color: rgb(80, 80, 80);
+  font-size: large;
+}

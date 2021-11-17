@@ -1,0 +1,32 @@
+<div class="flex-container-column empty"></div>
+<div class="flex-container-column container center" style="background-color: white">
+    <h4 class="center">View Details</h4>
+
+    <table class="table table-striped p">
+        <thead>
+            <tr>
+                <th> First Name</th>
+                <th> Last Name</th>
+                <th> Email Id</th>
+                <th style="text-align: center;"> Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let employee of employees">
+                <td> {{employee.first_name}}</td>
+                <td> {{employee.last_name}}</td>
+                <td> {{employee.email}}</td>
+                <td>
+                    <div class="flex-container-row">
+                        <button class="green" style="margin-right: 16px" mat-raised-button
+                            (click)="employeeDetails(employee.id)">View</button>
+
+                        <button class="red" mat-raised-button (click)="deleteEmployee(employee.id)">Delete</button>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>
