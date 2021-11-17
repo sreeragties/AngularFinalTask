@@ -1,4 +1,4 @@
-#Angular Training Task for Evaluation
+# Angular Training Task for Evaluation
 _____________________________________
 
 A Registration page was successfully implemented with GET and POST Methods, Routing, Validators & Testing.
