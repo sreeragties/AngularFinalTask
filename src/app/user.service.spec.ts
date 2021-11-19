@@ -70,7 +70,7 @@ describe('UserService', () => {
     httpMock.verify();
   });
 
-  describe('#getAll', () => {
+  describe('getAll', () => {
     it('returned Observable should match the right data', () => {
       const data = [
         {
@@ -117,7 +117,7 @@ describe('UserService', () => {
   });
 
   describe('Testing POST method', () => {
-    it('returned Observable should match the right data', () => {
+    it('should match with the mock data', () => {
       const data = {
         id: 12,
         first_name: 'Test',
